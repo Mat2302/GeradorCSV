@@ -1,39 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Gerador de CSV - Livros</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../img/bookImage.png">
+        <h2>Gerador de Arquivo CSV</h2>
+
+        <p>Arquivo CSV gerado com sucesso!</p>
+
+        <input type="button" value="Página Inicial" onclick="window.open('../index.html', '_top');">
+    </div>
+</body>
+
+</html>
+
 <?php
 
-include('Connection/connectionBD.php');
+include('../connection/connectionBD.php');
 
 try {
-    $stmt = $pdo->prepare('select * from bookPhp order by editora');
+    $stmt = $pdo->prepare('SELECT * FROM bookPhp ORDER BY editora');
     $stmt->execute();
 
-    $fp = fopen('CSVFile/book.csv', 'w');
+    $fp = fopen('../csvFile/book.csv', 'w');
 
-    $titleColumns = array('livro', 'autor', 'sexo', 'pagina', 'editora', 'valor', 'uf', 'ano');
+    $titleColumns = array('livro', 'autor', 'paginas', 'editora', 'valor', 'ano');
 
     fputcsv($fp, $titleColumns);
 
     while ($row = $stmt->fetch()) {
         $livro = $row['livro'];
         $autor = $row['autor'];
-        $sexo = $row['sexo'];
-        $pagina = $row['pagina'];
+        $paginas = $row['paginas'];
         $editora = $row['editora'];
         $valor = $row['valor'];
-        $uf = $row['uf'];
         $ano = $row['ano'];
 
         $list = array(
-            array($livro, $autor, $sexo, $pagina, $editora, $valor, $uf, $ano),
+            array($livro, $autor, $paginas, $editora, $valor, $ano),
         );
 
         foreach ($list as $line) {
             fputcsv($fp, $line);
         }
     }
-    
+
     $msg = 'Arquivo gerado: book.csv';
     fclose($fp);
-} catch(PDOException $e) {
+} catch (PDOException $e) {
     echo 'Error: ' . $e->getMessage();
 }
 ?>

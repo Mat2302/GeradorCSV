@@ -16,6 +16,11 @@ h2 {
     margin-top: 2px;
 }
 
+p {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
 input {
     display: flex;
     width: 100%;
@@ -43,6 +48,8 @@ input[type="button"]:hover {
     margin-top: 14rem;
     margin-bottom: -10px;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(255, 244, 255, 0.6);
     background-color: #EDEDED;
 }
