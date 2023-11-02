@@ -1,16 +1,52 @@
 livro,autor,paginas,editora,valor,ano
-"SQL para leigos","João Nunes",450,Addison,98,2018
-"Receitas Caseiras","Celia Tavares",210,Atlas,45,2008
 "Cavaleiro Real","Ana Claudia",465,Atlas,49.9,2009
+"O império final","Brandon Sanderson",300,Leya,47,2006
+"O Herói das Eras","Brandon Sanderson",300,Leya,58,2008
+"O poço da ascensão","Brandon Sanderson",321,Leya,56,2007
+"Sociedade do Cansaço","Byung Chul-Han",78,Vozes,45,2011
+"Receitas Caseiras","Celia Tavares",210,Atlas,45,2008
+"O poder da mente","Clara Mafra",120,Continental,56,2017
+"Um sopro de neve e cinzas","Diana Gabaldon",257,Arqueiro,59,1991
+"Os tambores do outono","Diana Gabaldon",451,Arqueiro,55,1991
+"A cruz de fogo","Diana Gabaldon",351,Arqueiro,55,1991
+"A viajante do tempo","Diana Gabaldon",451,Arqueiro,74,1991
+"O resgate no mar","Diana Gabaldon",256,Arqueiro,56,1991
+"A libélula no âmbar","Diana Gabaldon",124,Arqueiro,56,1991
 "Pessoas Efetivas","Eduardo Santos",390,Beta,78,2018
 "Hábitos Saudáveis","Eduardo Santos",630,Beta,150,2019
-"A Casa Marrom","Hermes Macedo",250,Bubba,60,2016
-"O poder da mente","Clara Mafra",120,Continental,56,2017
-"Pra sempre amigas","Leda Silva",510,Insignia,78,2011
+"Os Filhos de Duna","Frank Herbert",255,Duna,25,1976
+"O Imperador-Deus de Duna","Frank Herbert",254,Duna,64,1981
+"Os Hereges de Duna","Frank Herbert",354,Duna,54,1984
+"O Messias de Duna","Frank Herbert",452,Duna,52,1969
+"As Herdeiras de Duna","Frank Herbert",259,Duna,49,1985
+Duna,"Frank Herbert",455,Duna,55,2010
 "Estácio Querido","Geraldo Francisco",310,Insignia,100,2015
-"O Último Olimpiano","Rick Riordan",330,Intrínseca,51,2009
-"O Mar de Monstros","Rick Riordan",300,Intrínseca,50,2009
-"O Ladrão de Raios","Rick Riordan",289,Intrínseca,45,2009
-"A Maldição do Titã","Rick Riordan",350,Intrínseca,50,2009
-"A Batalha do Labirinto","Rick Riordan",329,Intrínseca,49.5,2009
+"A Casa Marrom","Hermes Macedo",250,Bubba,60,2016
+"SQL para leigos","João Nunes",450,Addison,98,2018
+"Pra sempre amigas","Leda Silva",510,Insignia,78,2011
 "Copas Inesquecíveis","Marco Alcantara",200,Larson,130,2018
+Renegado,"Oliver Bowden",341,Galera,54,2010
+Revelações,"Oliver Bowden",312,Galera,51,2011
+Unity,"Oliver Bowden",341,Galera,51,2013
+"Bandeira Negra","Oliver Bowden",341,Galera,59,2012
+Irmandade,"Oliver Bowden",324,Galera,62,2008
+Renascença,"Oliver Bowden",325,Galera,54,2007
+"A Cruzada Secreta","Oliver Bowden",325,Galera,65,2009
+"A marca de Athena","Rick Riordan",250,Intrínseca,63,2017
+"A profecia das sombras","Rick Riordan",255,Intrinseca,41,2020
+"A torre de Nero","Rick Riordan",354,Intrinseca,57,2020
+"A Maldição do Titã","Rick Riordan",350,Intrínseca,50,2009
+"A tumba do tirano","Rick Riordan",255,Intrinseca,56,2020
+"A Batalha do Labirinto","Rick Riordan",329,Intrínseca,49.5,2009
+"O Ladrão de Raios","Rick Riordan",289,Intrínseca,45,2009
+"A casa de Hades","Rick Riordan",123,Intrinseca,56,2017
+"O labirinto de fogo","Rick Riordan",245,Intrinseca,37,2020
+"O Mar de Monstros","Rick Riordan",300,Intrínseca,50,2009
+"O Último Olimpiano","Rick Riordan",330,Intrínseca,51,2009
+"O sangue do Olimpo","Rick Riordan",152,Intrinseca,63,2017
+"O Filho de Netuno","Rick Riordan",200,Intrínseca,36,2017
+"O Herói Perdido","Rick Riordan",350,Intrínseca,44,2017
+"O oráculo oculto","Rick Riordan",152,Intrinseca,62,2020
+"Jogos Vorazes - A Esperança","Suzanne Collins",323,Rocco,58,2014
+"Jogos Vorazes - Em Chamas","Suzanne Collins",320,Rocco,65,2014
+"Jogos Vorazes","Suzanne Collins",300,Rocco,56,2012

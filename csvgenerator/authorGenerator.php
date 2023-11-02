@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"  type="image/x-icon" href="../img/favicon.ico">
+    <title>Gerador CSV - Autor</title>
     <link rel="stylesheet" href="../style/style.css">
-    <title>Gerador de CSV - Livros</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 
 <body>
@@ -23,40 +22,35 @@
 
 </html>
 
+
 <?php
 
 include('../connection/connectionBD.php');
 
 try {
-    $stmt = $pdo->prepare('SELECT * FROM bookPhp ORDER BY autor');
+    $stmt = $pdo->prepare('SELECT * FROM authorPhp ORDER BY nome');
     $stmt->execute();
 
-    $fp = fopen('../csvFile/book.csv', 'w');
+    $fp = fopen('../csvFile/author.csv', 'w');
 
-    $titleColumns = array('livro', 'autor', 'paginas', 'editora', 'valor', 'ano');
+    $titleColumns = array('nome', 'livro');
 
     fputcsv($fp, $titleColumns);
 
     while ($row = $stmt->fetch()) {
+        $nome = $row['nome'];
         $livro = $row['livro'];
-        $autor = $row['autor'];
-        $paginas = $row['paginas'];
-        $editora = $row['editora'];
-        $valor = $row['valor'];
-        $ano = $row['ano'];
 
         $list = array(
-            array($livro, $autor, $paginas, $editora, $valor, $ano),
+            array($nome, $livro)
         );
 
         foreach ($list as $line) {
             fputcsv($fp, $line);
         }
     }
-
-    $msg = 'Arquivo gerado: book.csv';
-    fclose($fp);
 } catch (PDOException $e) {
     echo 'Error: ' . $e->getMessage();
 }
+
 ?>
